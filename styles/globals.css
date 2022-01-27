@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html,
 body {
   padding: 0;
@@ -14,4 +19,21 @@ a {
 
 * {
   box-sizing: border-box;
+}
+input{
+  width:100%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  margin-top:-10px;
+  background-color: RGB(255,255,255,0.7);
+}
+
+input:focus{
+  border-color:dodgerBlue;
+  background-color: RGB(255,255,255,1);
+  box-shadow:0 0 8px 0 dodgerBlue;
 }
